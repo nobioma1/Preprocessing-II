@@ -82,5 +82,36 @@
         .small-button(@button-bg, @white, @font-size);
       }
     }
+  } // content-section
+
+  .vacation-form {
+    margin: @form-margin;
+
+    form {
+      font-size: @font-size;
+      .flex(column);
+      padding-bottom: 20px;
+    }
+
+    label {
+      .flex(column);
+      padding: @form-margin;
+
+      input, textarea {
+        padding: 10px 5px;
+        margin: @form-margin;
+        border: 1px solid @silver;
+        border-radius: 5px;
+      }
+
+      textarea {
+        height: 100px;
+      }
+    }
+
+    button {
+      .small-button(@button-bg, @white, @font-size);
+      border: none;
+    }
   }
 } // home

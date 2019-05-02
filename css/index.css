@@ -322,3 +322,36 @@ header a {
   font-size: 1.6rem;
   padding: 10px 0;
 }
+.home .vacation-form {
+  margin: 5px 0;
+}
+.home .vacation-form form {
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+.home .vacation-form label {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0;
+}
+.home .vacation-form label input,
+.home .vacation-form label textarea {
+  padding: 10px 5px;
+  margin: 5px 0;
+  border: 1px solid #C0C0C0;
+  border-radius: 5px;
+}
+.home .vacation-form label textarea {
+  height: 100px;
+}
+.home .vacation-form button {
+  background-color: #17A2B8;
+  color: #FFFFFF;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  padding: 10px 0;
+  border: none;
+}
