@@ -246,6 +246,14 @@ header a {
   justify-content: space-between;
 }
 .home .content-pick .destination {
-  width: 30%;
+  width: 25%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  background-color: #17A2B8;
+  color: #FFFFFF;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  padding: 10px 0;
 }
