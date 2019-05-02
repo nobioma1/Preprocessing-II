@@ -1,1 +1,33 @@
 // Mixins in here
+.small-button(@bg-color, @color, @text-size) {
+  background-color: @bg-color;
+  color: @color;
+  text-align: center;
+  border-radius: 10px;
+  font-size: @text-size;
+  padding: 10px 0;
+}
+
+.flex(@direction) {
+  display: flex;
+  flex-direction: @direction;
+}
+
+.media-width-mobile() {
+  @media @mobile {
+    width: 100%;
+  }
+}
+
+.flash-color(@color, @duration, @iteration) {
+  animation-name: change-color;
+  animation-iteration-count: @iteration;
+  animation-duration: @duration;
+
+  @keyframes change-color {
+    to{
+      // color: lighter(@start-color, @change-rate);
+      color: @color;
+    }
+  }
+}
