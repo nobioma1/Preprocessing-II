@@ -18,3 +18,16 @@
     width: 100%;
   }
 }
+
+.flash-color(@color, @duration, @iteration) {
+  animation-name: change-color;
+  animation-iteration-count: @iteration;
+  animation-duration: @duration;
+
+  @keyframes change-color {
+    to{
+      // color: lighter(@start-color, @change-rate);
+      color: @color;
+    }
+  }
+}

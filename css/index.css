@@ -184,6 +184,16 @@ header {
   justify-content: center;
   padding: 20px 0;
 }
+header h1 {
+  animation-name: change-color;
+  animation-iteration-count: infinite;
+  animation-duration: 0.1s;
+}
+@keyframes change-color {
+  to {
+    color: yellow;
+  }
+}
 @media (max-width: 500px) {
   header {
     padding: 10px 0;
